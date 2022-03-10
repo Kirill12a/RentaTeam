@@ -10,10 +10,20 @@
 		BFC5A3C7DAB8401B10A25E67 /* Pods_RentaTeam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 041177ABBB5846EA007CE783 /* Pods_RentaTeam.framework */; };
 		D2DB0AF027DA6A0B00D37289 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB0AEF27DA6A0B00D37289 /* AppDelegate.swift */; };
 		D2DB0AF227DA6A0B00D37289 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB0AF127DA6A0B00D37289 /* SceneDelegate.swift */; };
-		D2DB0AF427DA6A0B00D37289 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB0AF327DA6A0B00D37289 /* ViewController.swift */; };
-		D2DB0AF727DA6A0B00D37289 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2DB0AF527DA6A0B00D37289 /* Main.storyboard */; };
+		D2DB0AF427DA6A0B00D37289 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB0AF327DA6A0B00D37289 /* FirstViewController.swift */; };
 		D2DB0AF927DA6A0D00D37289 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2DB0AF827DA6A0D00D37289 /* Assets.xcassets */; };
 		D2DB0AFC27DA6A0D00D37289 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2DB0AFA27DA6A0D00D37289 /* LaunchScreen.storyboard */; };
+		D2DB0B0A27DA806C00D37289 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB0B0927DA806C00D37289 /* MainTabBarController.swift */; };
+		D2DB0B0C27DA80B500D37289 /* WaterfallLayoutDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB0B0B27DA80B500D37289 /* WaterfallLayoutDelegate.swift */; };
+		D2DB0B1027DA820800D37289 /* NetworkRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB0B0F27DA820800D37289 /* NetworkRequestManager.swift */; };
+		D2DB0B1227DA85CE00D37289 /* NetworkDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB0B1127DA85CE00D37289 /* NetworkDataManager.swift */; };
+		D2DB0B1427DA85E700D37289 /* RequestResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB0B1327DA85E700D37289 /* RequestResults.swift */; };
+		D2DB0B1627DA85F900D37289 /* FavouritePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB0B1527DA85F900D37289 /* FavouritePhoto.swift */; };
+		D2DB0B1827DA860E00D37289 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB0B1727DA860E00D37289 /* PhotosCollectionViewCell.swift */; };
+		D2DB0B1A27DA861E00D37289 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB0B1927DA861E00D37289 /* PhotoTableViewCell.swift */; };
+		D2DB0B1C27DA864E00D37289 /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB0B1B27DA864E00D37289 /* SecondTableViewController.swift */; };
+		D2DB0B1E27DA866000D37289 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB0B1D27DA866000D37289 /* DetailViewController.swift */; };
+		D2DB0B2027DA867D00D37289 /* FavouritePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2DB0B1F27DA867D00D37289 /* FavouritePhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +33,21 @@
 		D2DB0AEC27DA6A0B00D37289 /* RentaTeam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentaTeam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2DB0AEF27DA6A0B00D37289 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2DB0AF127DA6A0B00D37289 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D2DB0AF327DA6A0B00D37289 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D2DB0AF627DA6A0B00D37289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2DB0AF327DA6A0B00D37289 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		D2DB0AF827DA6A0D00D37289 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2DB0AFB27DA6A0D00D37289 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2DB0AFD27DA6A0D00D37289 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2DB0B0927DA806C00D37289 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		D2DB0B0B27DA80B500D37289 /* WaterfallLayoutDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallLayoutDelegate.swift; sourceTree = "<group>"; };
+		D2DB0B0F27DA820800D37289 /* NetworkRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestManager.swift; sourceTree = "<group>"; };
+		D2DB0B1127DA85CE00D37289 /* NetworkDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataManager.swift; sourceTree = "<group>"; };
+		D2DB0B1327DA85E700D37289 /* RequestResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestResults.swift; sourceTree = "<group>"; };
+		D2DB0B1527DA85F900D37289 /* FavouritePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritePhoto.swift; sourceTree = "<group>"; };
+		D2DB0B1727DA860E00D37289 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2DB0B1927DA861E00D37289 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		D2DB0B1B27DA864E00D37289 /* SecondTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewController.swift; sourceTree = "<group>"; };
+		D2DB0B1D27DA866000D37289 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D2DB0B1F27DA867D00D37289 /* FavouritePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritePhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +76,6 @@
 				2768D42B188D0D5DA7CD6FEA /* Pods-RentaTeam.debug.xcconfig */,
 				7E1664D6B57E357E61549D34 /* Pods-RentaTeam.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +100,65 @@
 		D2DB0AEE27DA6A0B00D37289 /* RentaTeam */ = {
 			isa = PBXGroup;
 			children = (
-				D2DB0AEF27DA6A0B00D37289 /* AppDelegate.swift */,
-				D2DB0AF127DA6A0B00D37289 /* SceneDelegate.swift */,
-				D2DB0AF327DA6A0B00D37289 /* ViewController.swift */,
-				D2DB0AF527DA6A0B00D37289 /* Main.storyboard */,
-				D2DB0AF827DA6A0D00D37289 /* Assets.xcassets */,
-				D2DB0AFA27DA6A0D00D37289 /* LaunchScreen.storyboard */,
+				D2DB0B0727DA7F7700D37289 /* Model */,
+				D2DB0B0627DA7F7200D37289 /* View */,
+				D2DB0B0527DA7F6800D37289 /* Controller */,
+				D2DB0B0827DA7F8600D37289 /* Manager */,
+				D2DB0B0427DA7F6400D37289 /* Supporting  */,
 				D2DB0AFD27DA6A0D00D37289 /* Info.plist */,
 			);
 			path = RentaTeam;
+			sourceTree = "<group>";
+		};
+		D2DB0B0427DA7F6400D37289 /* Supporting  */ = {
+			isa = PBXGroup;
+			children = (
+				D2DB0AEF27DA6A0B00D37289 /* AppDelegate.swift */,
+				D2DB0AF127DA6A0B00D37289 /* SceneDelegate.swift */,
+				D2DB0AF827DA6A0D00D37289 /* Assets.xcassets */,
+			);
+			path = "Supporting ";
+			sourceTree = "<group>";
+		};
+		D2DB0B0527DA7F6800D37289 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2DB0AF327DA6A0B00D37289 /* FirstViewController.swift */,
+				D2DB0B1B27DA864E00D37289 /* SecondTableViewController.swift */,
+				D2DB0B1D27DA866000D37289 /* DetailViewController.swift */,
+				D2DB0B0927DA806C00D37289 /* MainTabBarController.swift */,
+				D2DB0B1F27DA867D00D37289 /* FavouritePhotoViewController.swift */,
+				D2DB0B0B27DA80B500D37289 /* WaterfallLayoutDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D2DB0B0627DA7F7200D37289 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2DB0AFA27DA6A0D00D37289 /* LaunchScreen.storyboard */,
+				D2DB0B1727DA860E00D37289 /* PhotosCollectionViewCell.swift */,
+				D2DB0B1927DA861E00D37289 /* PhotoTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2DB0B0727DA7F7700D37289 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2DB0B1327DA85E700D37289 /* RequestResults.swift */,
+				D2DB0B1527DA85F900D37289 /* FavouritePhoto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2DB0B0827DA7F8600D37289 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				D2DB0B0F27DA820800D37289 /* NetworkRequestManager.swift */,
+				D2DB0B1127DA85CE00D37289 /* NetworkDataManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +223,6 @@
 			files = (
 				D2DB0AFC27DA6A0D00D37289 /* LaunchScreen.storyboard in Resources */,
 				D2DB0AF927DA6A0D00D37289 /* Assets.xcassets in Resources */,
-				D2DB0AF727DA6A0B00D37289 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,23 +275,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2DB0AF427DA6A0B00D37289 /* ViewController.swift in Sources */,
+				D2DB0B1C27DA864E00D37289 /* SecondTableViewController.swift in Sources */,
+				D2DB0B1627DA85F900D37289 /* FavouritePhoto.swift in Sources */,
+				D2DB0AF427DA6A0B00D37289 /* FirstViewController.swift in Sources */,
+				D2DB0B1227DA85CE00D37289 /* NetworkDataManager.swift in Sources */,
+				D2DB0B0C27DA80B500D37289 /* WaterfallLayoutDelegate.swift in Sources */,
+				D2DB0B1827DA860E00D37289 /* PhotosCollectionViewCell.swift in Sources */,
 				D2DB0AF027DA6A0B00D37289 /* AppDelegate.swift in Sources */,
+				D2DB0B0A27DA806C00D37289 /* MainTabBarController.swift in Sources */,
+				D2DB0B1A27DA861E00D37289 /* PhotoTableViewCell.swift in Sources */,
 				D2DB0AF227DA6A0B00D37289 /* SceneDelegate.swift in Sources */,
+				D2DB0B1427DA85E700D37289 /* RequestResults.swift in Sources */,
+				D2DB0B2027DA867D00D37289 /* FavouritePhotoViewController.swift in Sources */,
+				D2DB0B1027DA820800D37289 /* NetworkRequestManager.swift in Sources */,
+				D2DB0B1E27DA866000D37289 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D2DB0AF527DA6A0B00D37289 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D2DB0AF627DA6A0B00D37289 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D2DB0AFA27DA6A0D00D37289 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -364,7 +435,6 @@
 				INFOPLIST_FILE = RentaTeam/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -393,7 +463,6 @@
 				INFOPLIST_FILE = RentaTeam/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
