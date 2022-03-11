@@ -17,6 +17,8 @@ class PhotoTableViewCell: UITableViewCell {
     let imageView = UIImageView()
     imageView.translatesAutoresizingMaskIntoConstraints = false
     imageView.contentMode = .scaleAspectFit
+    imageView.backgroundColor = UIColor(red: 255/255, green: 245/255, blue: 154/255, alpha: 100)
+
     return imageView
   }()
 
@@ -25,7 +27,10 @@ class PhotoTableViewCell: UITableViewCell {
     label.translatesAutoresizingMaskIntoConstraints = false
     label.font = UIFont(name: "Apple SD Gothic Neo", size: 17)
     label.textAlignment = .left
-    label.numberOf
+    label.numberOfLines = 0
+    label.backgroundColor = UIColor(red: 255/255, green: 245/255, blue: 154/255, alpha: 100)
+
+    return label
   }()
 
   var photo: FavouritePhoto!{
@@ -65,6 +70,8 @@ class PhotoTableViewCell: UITableViewCell {
     super.init(style: style, reuseIdentifier: reuseIdentifier)
     setUpImageView()
     setUpLabel()
+    self.backgroundColor =   UIColor(red: 255/255, green: 245/255, blue: 154/255, alpha: 100)
+
   }
 
   required init?(coder: NSCoder) {

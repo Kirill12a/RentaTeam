@@ -126,7 +126,7 @@
 				D2DB0B2127DAAA5E00D37289 /* FirstTabBarItem */,
 				D2DB0B2227DAAA7200D37289 /* SecondTabBarItem */,
 				D2DB0B2327DAAAA400D37289 /* SettingTabBar */,
-				D2DB0B0B27DA80B500D37289 /* WaterfallLayoutDelegate.swift */,
+				D2DB0B2427DBED8000D37289 /* WaterfallLayout */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -183,6 +183,14 @@
 				D2DB0B0927DA806C00D37289 /* MainTabBarController.swift */,
 			);
 			path = SettingTabBar;
+			sourceTree = "<group>";
+		};
+		D2DB0B2427DBED8000D37289 /* WaterfallLayout */ = {
+			isa = PBXGroup;
+			children = (
+				D2DB0B0B27DA80B500D37289 /* WaterfallLayoutDelegate.swift */,
+			);
+			path = WaterfallLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

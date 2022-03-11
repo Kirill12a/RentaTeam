@@ -23,12 +23,13 @@ class PhotosCollectionViewCell: UICollectionViewCell {
 
   let imageView: UIImageView = {
     let photo = UIImageView()
+    photo.backgroundColor = UIColor(red: 255/255, green: 245/255, blue: 154/255, alpha: 100)
     photo.translatesAutoresizingMaskIntoConstraints = false
     photo.backgroundColor = UIColor(red: 255 / 255, green: 249 / 255, blue: 249 / 255, alpha: 1.0)
     photo.contentMode = .scaleToFill
     return photo
   }()
-
+  
   private func setUpImageView() {
     addSubview(imageView)
     imageView.leadingAnchor.constraint(equalTo: self.leadingAnchor).isActive = true
