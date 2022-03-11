@@ -1,5 +1,5 @@
-# RentaTeam
-Тестовое задание 
+# Тестовое задание  в RentaTeam
+
 
 ## Installation
 
