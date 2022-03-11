@@ -123,12 +123,10 @@
 		D2DB0B0527DA7F6800D37289 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D2DB0AF327DA6A0B00D37289 /* FirstViewController.swift */,
-				D2DB0B1B27DA864E00D37289 /* SecondTableViewController.swift */,
-				D2DB0B1D27DA866000D37289 /* DetailViewController.swift */,
-				D2DB0B0927DA806C00D37289 /* MainTabBarController.swift */,
-				D2DB0B1F27DA867D00D37289 /* FavouritePhotoViewController.swift */,
-				D2DB0B0B27DA80B500D37289 /* WaterfallLayoutDelegate.swift */,
+				D2DB0B2127DAAA5E00D37289 /* FirstTabBarItem */,
+				D2DB0B2227DAAA7200D37289 /* SecondTabBarItem */,
+				D2DB0B2327DAAAA400D37289 /* SettingTabBar */,
+				D2DB0B2427DBED8000D37289 /* WaterfallLayout */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -159,6 +157,40 @@
 				D2DB0B1127DA85CE00D37289 /* NetworkDataManager.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		D2DB0B2127DAAA5E00D37289 /* FirstTabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				D2DB0AF327DA6A0B00D37289 /* FirstViewController.swift */,
+				D2DB0B1D27DA866000D37289 /* DetailViewController.swift */,
+			);
+			path = FirstTabBarItem;
+			sourceTree = "<group>";
+		};
+		D2DB0B2227DAAA7200D37289 /* SecondTabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				D2DB0B1B27DA864E00D37289 /* SecondTableViewController.swift */,
+				D2DB0B1F27DA867D00D37289 /* FavouritePhotoViewController.swift */,
+			);
+			path = SecondTabBarItem;
+			sourceTree = "<group>";
+		};
+		D2DB0B2327DAAAA400D37289 /* SettingTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D2DB0B0927DA806C00D37289 /* MainTabBarController.swift */,
+			);
+			path = SettingTabBar;
+			sourceTree = "<group>";
+		};
+		D2DB0B2427DBED8000D37289 /* WaterfallLayout */ = {
+			isa = PBXGroup;
+			children = (
+				D2DB0B0B27DA80B500D37289 /* WaterfallLayoutDelegate.swift */,
+			);
+			path = WaterfallLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
