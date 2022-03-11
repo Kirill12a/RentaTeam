@@ -20,7 +20,7 @@ class FirstViewController: UICollectionViewController {
         collectionView.backgroundColor = .white
         congfigureCollectionView()
         setUpSearchBar()
-        title = "Photos"
+        title = "Фото"
 
       randomGenerateTableItems()
 
@@ -53,7 +53,7 @@ class FirstViewController: UICollectionViewController {
 
     private func setUpSearchBar(){
         let searchConroller = UISearchController(searchResultsController: nil)
-        searchConroller.searchBar.placeholder = "Search photo"
+        searchConroller.searchBar.placeholder = "Искать фото"
         searchConroller.obscuresBackgroundDuringPresentation = false
         searchConroller.searchBar.delegate = self
         navigationItem.hidesSearchBarWhenScrolling = false

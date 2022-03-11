@@ -25,15 +25,14 @@ class PhotoTableViewCell: UITableViewCell {
     label.translatesAutoresizingMaskIntoConstraints = false
     label.font = UIFont(name: "Apple SD Gothic Neo", size: 17)
     label.textAlignment = .left
-    label.numberOfLines = 0
-    return label
+    label.numberOf
   }()
 
   var photo: FavouritePhoto!{
     didSet {
       guard let photoURL = URL(string: photo.photoUrl) else {return}
       photoImageView.sd_setImage(with: photoURL, completed: nil)
-      userNameLabel.text = "Made by: \(photo.userName)"
+      userNameLabel.text = "Создатель: \(photo.userName)"
     }
   }
 

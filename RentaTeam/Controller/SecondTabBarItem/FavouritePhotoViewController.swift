@@ -14,8 +14,8 @@ class FavouritePhotoViewController: UIViewController {
         didSet {
             guard let photoURL = URL(string: photo.photoUrl) else {return}
             imageView.sd_setImage(with: photoURL, completed: nil)
-            usernameLabel.text = "By: \(photo.userName)"
-            createdAtLabel.text = "created at: \(photo.createdAT)"
+            usernameLabel.text = "Автор: \(photo.userName)"
+            createdAtLabel.text = "Дата: \(photo.createdAT)"
         }
     }
 
@@ -54,6 +54,11 @@ class FavouritePhotoViewController: UIViewController {
         setUpCreatedAtLabel()
         setUpUsernameLabel()
     }
+
+  override func viewWillAppear(_ animated: Bool) {
+    self.tabBarController?.tabBar.isHidden = true
+
+  }
 
 
     // MARK: UI Configuration methods

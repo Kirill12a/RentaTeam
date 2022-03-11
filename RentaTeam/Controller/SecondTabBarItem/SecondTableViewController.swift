@@ -18,14 +18,12 @@ class SecondTableViewController: UITableViewController {
         view.backgroundColor = .white
         loadPhotos()
         setUpTableView()
-
-
-
-      print(photos.count)
     }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         loadPhotos()
+      self.tabBarController?.tabBar.isHidden = false
       self.navigationController!.tabBarItem.badgeValue = "\(photos.count)"
 
     }
@@ -38,7 +36,7 @@ class SecondTableViewController: UITableViewController {
     private func setUpTableView() {
         tableView.register(PhotoTableViewCell.self, forCellReuseIdentifier: "Cell")
         tableView.separatorInset = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
-        title = "Your favourite photos"
+        title = "Нравиться"
     }
 
 

@@ -26,8 +26,8 @@ class DetailViewController: UIViewController {
             let photoUrl = photo.urls["regular"]
             guard let imageURL = photoUrl, let url = URL(string: imageURL) else { return }
             imageView.sd_setImage(with: url, completed: nil)
-            usernameLabel.text = "By: \(photo.user.username)"
-            createdAtLabel.text = "created at: \(dateFormatter.string(from: photo.createdAt))"
+            usernameLabel.text = "Автор: \(photo.user.username)"
+            createdAtLabel.text = "Создана: \(dateFormatter.string(from: photo.createdAt))"
         }
     }
 
@@ -74,8 +74,6 @@ class DetailViewController: UIViewController {
         setUpUsernameLabel()
         updateButtonImage()
 
-
-
     }
 
   override func viewWillAppear(_ animated: Bool) {
@@ -118,51 +116,35 @@ class DetailViewController: UIViewController {
             try realm.write({
                 realm.delete(realm.objects(FavouritePhoto.self).filter(predicate))
             })
-            presentSuccessDeleteAlert()
         }catch let error {
             print(error.localizedDescription)
-            presentUnsuccsessDeleteAlert()
         }
     }
 
     // MARK: Allert Methods
     private func presentSuccessSaveAlert() {
-        let allertController = UIAlertController(title: "Photo was saved", message: "Your photo has been succesfully saved", preferredStyle: .alert)
+        let allertController = UIAlertController(title: "Фото сохранено", message: "можешь найти его в избранном", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
         allertController.addAction(okAction)
         present(allertController, animated: true, completion: nil)
     }
 
     private func presentUnsuccsessSaveAlert() {
-        let allertController = UIAlertController(title: "Photo was not saved", message: "Something went wrong", preferredStyle: .alert)
+        let allertController = UIAlertController(title: "Фото не сохранено", message: "упс....", preferredStyle: .alert)
         let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
         allertController.addAction(okAction)
         present(allertController, animated: true, completion: nil)
     }
 
-    private func presentSuccessDeleteAlert() {
-        let allertController = UIAlertController(title: "Photo was deleted", message: "Your photo has been succesfully deleted", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
-        allertController.addAction(okAction)
-        present(allertController, animated: true, completion: nil)
-    }
 
-    private func presentUnsuccsessDeleteAlert() {
-        let allertController = UIAlertController(title: "Photo was not deleted", message: "Something went wrong", preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
-        allertController.addAction(okAction)
-        present(allertController, animated: true, completion: nil)
-    }
-
-    // MARK: UI Configuration methods
     private func setUPImageView() {
         view.addSubview(imageView)
         imageView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 10).isActive = true
         imageView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         imageView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
         imageView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 2/3).isActive = true
-
     }
+
 
     private func setUpUsernameLabel(){
         view.addSubview(usernameLabel)
@@ -171,6 +153,7 @@ class DetailViewController: UIViewController {
         usernameLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 15).isActive = true
         usernameLabel.heightAnchor.constraint(equalToConstant: 25).isActive = true
     }
+
 
     private func setUpCreatedAtLabel() {
         view.addSubview(createdAtLabel)
